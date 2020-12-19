@@ -111,3 +111,54 @@ body {
 .backdrop-mode .main-content .cards-container {
     display: none;
 }
+
+.schedule {
+    .day-container {
+        margin-bottom: 2em;
+
+        .event {
+            display: flex;
+            padding: 1em;
+            margin: 0.5em 0;
+            color: #555;
+            box-shadow: 2px 2px 0 #eee;
+            border: solid 1px #eee;
+            border-radius: 4px;
+
+            .title {
+                flex: 1;
+                margin-right: 8px;
+            }
+
+            .details-container {
+                text-align: right;
+                display: flex;
+                flex-direction: row-reverse;
+
+                @include small {
+                    display: block;
+                }
+
+                .tags {
+                    display: inline-flex;
+                    align-items: center;
+                }
+
+                .tag {
+                    margin-left: 0.5em;
+                    margin-right: 1em;
+                    padding: 0.1rem 0.4rem;
+                    border-radius: 4px;
+                    font-size: 0.8rem;
+                    display: inline-block;
+                    color: #eee;
+
+                    @include small {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
