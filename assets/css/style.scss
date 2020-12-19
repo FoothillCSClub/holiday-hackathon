@@ -94,7 +94,8 @@ body {
     background-color: unset;
     background-size: cover;
     background-position: center;
-    background-image: url("{{ base.url | prepend: site.url }}/assets/img/winter_backdrop.png");
+    // increment `v` query parameter for cache-busting
+    background-image: url("{{ '/assets/img/winter_backdrop.png?v=1' | relative_url }}");
 }
 
 .backdrop-mode .page-header .cards-container {

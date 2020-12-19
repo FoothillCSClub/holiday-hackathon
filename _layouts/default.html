@@ -68,6 +68,6 @@
         document.body.classList.add('backdrop-mode');
       }
     </script>
-    <script src="{{ base.url | prepend: site.url }}/assets/js/snowflakes.js"></script>
+    <script src="{{ '/assets/js/snowflakes.js?v=' | append: site.github.build_revision | relative_url }}"></script>
   </body>
 </html>
