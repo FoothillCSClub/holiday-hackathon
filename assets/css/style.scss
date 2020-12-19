@@ -28,5 +28,10 @@ $section-headings-color: #2061a5;
     margin: 0 1em;
     margin-bottom: 1em;
     border-radius: 4px;
-    box-shadow: 0 0 16px #ccc;
+    box-shadow: 0 0 16px #d8d8d8;
+    min-width: 250px;
+}
+
+.card-title {
+    font-weight: bold;
 }
