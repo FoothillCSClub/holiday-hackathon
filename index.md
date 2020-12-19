@@ -1,10 +1,10 @@
 ---
 title: Holiday Hackathon
 cards:
-  - title: Explore CS through talks and workshops
-    description: Attend events and participate in the workshops to further your coding skills, earn points, and win cool prizes! You’ll learn a lot about software engineering, and the top contestants will win a prize as a bonus.
-  - title: Build a project for the hackathon
-    description: Start, build, and present a project with a team of 1 - 4 people. Compete against other teams at the hackathon for a Grand Prize and more!
+  - title: Learn
+    description: Attend talks and participate in workshops to further your coding skills, earn points, and win cool prizes! There's a lot for you to explore.
+  - title: Build
+    description: Build a project in the hackathon, and show it off to your friends! Do it just for fun, or compete with teams of 1 - 4 people for a Grand Prize and more!
 tags:
   everyone:
     label: Everyone
@@ -104,15 +104,15 @@ Hackathon Qualifications:
 
 ## Activity Competition
 
-This competition is meant for all people, especially those who may not be experienced programmers! You earn points for doing activities, and the most active attendees of the event will win a prize. Here's how you get points:
+This competition is meant for everyone, especially those who may not be experienced programmers! You earn points for doing all kinds of activities, and the top attendees of the event will win a prize. Here's how you get points:
 
 | Activity                     | Points            |
 |------------------------------|-------------------|
-| Attend a talk / workshop     | 10 points         |
+| Attend a talk or workshop    | 10 points         |
 | Do an activity in a workshop | 10 points         |
 | Complete a Challenge         | 20 points         |
 | Refer a friend               | 5 points / person |
-| Hackathon Project            | 50 points         |
+| Build a Hackathon Project    | 50 points         |
 
 
 ## Schedule
