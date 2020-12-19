@@ -1,10 +1,10 @@
 ---
 title: Holiday Hackathon
 cards:
-    - title: Build a project for the hackathon
-      description: Start, build, and present a project with a team of 1 - 4 people. Compete against other teams at the hackathon for a Grand Prize and more!
     - title: Explore CS through talks and workshops
       description: Attend events and participate in the workshops to further your coding skills, earn points, and win cool prizes! You’ll learn a lot about software engineering, and the top contestants will win a prize as a bonus.
+    - title: Build a project for the hackathon
+      description: Start, build, and present a project with a team of 1 - 4 people. Compete against other teams at the hackathon for a Grand Prize and more!
 ---
 
 ## The Hackathon
