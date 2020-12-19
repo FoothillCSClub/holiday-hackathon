@@ -36,6 +36,15 @@
     </header>
 
     <main id="content" class="main-content" role="main">
+      <div class="cards-container">
+        {% for section in page.cards %}
+        <div class="card">
+          <h3>{{ section.title }}</h3>
+          <p>{{ section.description }}</p>
+        </div>
+        {% endfor %}
+      </div>
+
       {{ content }}
 
       <footer class="site-footer">
