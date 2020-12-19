@@ -2,9 +2,6 @@
 title: Holiday Hackathon
 ---
 
-## Event Date
-Saturday, December 26 - Thursday, December 31
-
 ## Competitions
 
 ### The Hackathon - Build a project
