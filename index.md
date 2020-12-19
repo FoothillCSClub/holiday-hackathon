@@ -1,3 +1,7 @@
+---
+title: Holiday Hackathon
+---
+
 ## Event Date
 Saturday, December 26 - Thursday, December 31
 
