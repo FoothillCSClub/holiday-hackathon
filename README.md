@@ -31,6 +31,40 @@ This competition is meant for all people, especially those who may not be experi
 | Refer a friend               | 5 points / person |
 | Hackathon Project            | 50 points         |
 
+
+## Schedule
+
+| Day       | Time             | Topic                                      |
+|-----------|------------------|--------------------------------------------|
+| Sat 12/26 | 2:00 - 2:15 pm   | Keynote Talk                               |
+|           | 2:15 - 3:00 pm   | Hackathon & Event Kickoff                  |
+|           | 3:30 - 5:00 pm   | Intro to Git, Open Source, and Unix / Bash |
+|           |                  |                                            |
+| Sun 12/27 | 1:00 - 2:00 pm   | Intro to Python                            |
+|           | 2:30 - 3:30 pm   | Intro to Databases & SQL                   |
+|           | 4:00 - 5:00 pm   | Intro to Web Dev                           |
+|           | 5:15 - 6:15 pm   | Intro to Node.js & API servers             |
+|           |                  |                                            |
+| Mon 12/28 | 1:00 - 2:00 pm   | Intro to Java                              |
+|           | 2:30 - 3:30 pm   | Intro to Go / Writing game servers         |
+|           | 4:00 - 5:00 pm   | Using APIs / Web Scraping                  |
+|           | 5:30 - 6:30 pm   | Writing Discord Bots                       |
+|           |                  |                                            |
+| Tue 12/29 | 10:00 - 11:00 am | **Quantum Computing** by **Andrew Hacket from IBM** |
+|           | 2:00 - 3:00 pm   | Machine Learning & Neural Nets             |
+|           | 3:30 - 4:30 pm   | Java GUI                                   |
+|           | 5:00 - 6:00 pm   | Audio Processing & Making Synths           |
+|           |                  |                                            |
+| Wed 12/30 | 2:30 - 3:30 pm   | Hackathon check-in: share status           |
+|           | 4:00 - 5:00 pm   | Making iOS Apps with Swift                 |
+|           | 5:30 - 6:00 pm   | Real World Use: GPS Stuff                  |
+|           |                  |                                            |
+| Thu 12/31 | 2:00 - 2:30 pm   | Closing Keynote Talk                       |
+|           | 2:30 - 4:30 pm   | Hackathon Presentations                    |
+|           | 4:30 - 5:00 pm   | A fun activity 🎉                           |
+|           | 5:00 - 5:20 pm   | Winners announced 🥳                        |
+|           | 10:00 - 12:10 am | New Year Party 🎉                           |
+
 ## FAQs
 
 **Who is this for?**
