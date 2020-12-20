@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
 
 {% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
@@ -24,23 +24,28 @@
 
     <header class="page-header" role="banner">
       <canvas id="canvas"></canvas>
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline" style="margin-bottom: 1em;">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      <h2 class="project-tagline" style="font-weight: bold;">{{ page.dates | default: site.dates }}</h2>
-      {% if site.discord_invite %}
-        <a href="{{ site.discord_invite }}" class="btn">Join us on Discord</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
-      <div class="cards-container">
-        {% for section in page.cards %}
-        <div class="card">
-          <h3 class="card-title">{{ section.title }}</h3>
-          <p>{{ section.description }}</p>
+      <div class="header-content">
+        <h1 class="project-name" style="margin-bottom: 0.6em;">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+        <h2 class="project-tagline" style="margin-bottom: 2em;">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+        <h2 class="project-tagline" style="font-weight: bold; margin-bottom: 2em;">{{ page.dates | default: site.dates }}</h2>
+        {% if site.discord_invite %}
+          <a href="{{ site.discord_invite }}" class="btn">Join us on Discord</a>
+        {% endif %}
+        {% if site.show_downloads %}
+          <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
+          <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
+        {% endif %}
+        <div class="cards-container">
+          {% for section in page.cards %}
+          <div class="card">
+            <h3 class="card-title">{{ section.title }}</h3>
+            <p>{{ section.description }}</p>
+          </div>
+          {% endfor %}
         </div>
-        {% endfor %}
+      </div>
+      <div class="snowman-container">
+        <img class="snowman" src="{{ '/assets/img/snowman-coding.svg?v=1' | relative_url }}"></img>
       </div>
     </header>
 
@@ -63,11 +68,6 @@
       </footer>
     </main>
 
-    <script>
-      if (window.location.search.includes('backdrop-mode')) {
-        document.body.classList.add('backdrop-mode');
-      }
-    </script>
     <script src="{{ '/assets/js/snowflakes.js?v=' | append: site.github.build_revision | relative_url }}"></script>
   </body>
 </html>

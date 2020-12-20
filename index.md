@@ -2,9 +2,9 @@
 title: Holiday Hackathon
 cards:
   - title: Learn
-    description: Attend talks and participate in workshops to further your coding skills, earn points, and win cool prizes! There's a lot for you to explore.
+    description: Attend talks and participate in workshops to further your coding skills, earn points, and win cool prizes! There's a lot to explore.
   - title: Build
-    description: Build a project in the hackathon, and show it off to your friends! Do it just for fun, or compete with teams of 1 - 4 people for a Grand Prize and more!
+    description: Build a project in the hackathon, and show it off to your friends! Do it just for fun, or compete with teams of 1 - 4 people for prizes!
 tags:
   everyone:
     label: Everyone
@@ -35,7 +35,7 @@ schedule:
       - title: Intro to Databases & SQL
         time: 2:30 - 3:30 pm
         tags: ["beginner"]
-      - title: Intro to Web Dev
+      - title: Intro to Web Development
         time: 4:00 - 5:00 pm
         tags: ["beginner"]
       - title: Intro to Node.js & API servers
@@ -60,7 +60,7 @@ schedule:
       - title: <ins>Quantum Computing by Andrew Hacket from IBM</ins>
         time: 10 am - 11 am
         tags: ["everyone"]
-      - title: Machine Learning & Neural Nets
+      - title: Machine Learning & Neural Networks
         time: 2:00 - 3:00 pm
         tags: ["beginner"]
       - title: Java GUI

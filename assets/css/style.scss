@@ -12,29 +12,107 @@ $section-headings-color: #2061a5;
 @import "jekyll-theme-caymen";
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
+@mixin medium-large {
+    @media screen and (min-width: #{$medium-breakpoint}) {
+        @content;
+    }
+}
+
+html, body {
+    width: 100%;
+}
+
 body {
     font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.main-content h2 {
-    font-weight: bold;
-}
-
 .page-header {
     position: relative;
-}
-
-.page-header .cards-container {
-    display: none;
-}
-
-.page-header canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    pointer-events: none;
+    display: flex;
+    color: black;
+    text-align: left;
+    padding-bottom: 0;
+    // min-height: 100vh;
+
+    background-color: unset;
+    background-size: cover;
+    background-position: center;
+    // background: #a3dcec;
+    // increment `v` query parameter for cache-busting
+    // background-image: url("{{ '/assets/img/winter_backdrop.png?v=1' | relative_url }}");
+    background-image: url("{{ '/assets/img/winter_backdrop_empty.png?v=1' | relative_url }}");
+
+    .header-content {
+        z-index: 1;
+        width: 70%;
+        // flex: 1;
+    }
+
+    .snowman-container {
+        flex: 1;
+        display: inline-block;
+        position: absolute;
+        height: min(80vh, 80%);
+        bottom: 1em;
+        right: 1em;
+
+        .snowman {
+            margin-top: auto;
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-width: #{$medium-breakpoint}), screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) and (min-height: 600px) {
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        min-height: unset !important;
+
+        .header-content {
+            width: 100%;
+            text-align: center;
+        }
+
+        .snowman-container {
+            width: 100%;
+            flex: unset;
+            position: initial;
+
+            .snowman {
+                width: 100%;
+                height: 40vh;
+            }
+        }
+    }
+
+    .cards-container {
+        display: none;
+    }
+
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+    }
+}
+
+.main-content {
+    h2 {
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: #{$medium-breakpoint}) and (min-height: 600px) {
+    .page-header .cards-container {
+        display: flex;
+        margin-top: 3em;
+    }
+
+    .main-content .cards-container {
+        display: none;
+    }
 }
 
 .cards-container {
@@ -51,18 +129,38 @@ body {
     margin: 0 1em;
     margin-bottom: 1em;
     border-radius: 4px;
-    box-shadow: 0 0 16px #d8d8d8;
+    box-shadow: 0 0 16px #bae4f5ad;
+    border-bottom: solid 4px #1c8bcc;
     min-width: 250px;
+    transition: 0.2s transform;
+
+    .card-title {
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+
+        @include large {
+            font-size: 2rem;
+        }
+
+        @include medium {
+            font-size: 1.5rem;
+        }
+
+        @include small {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (pointer: fine) {
+        &:hover {
+            scale: 1.02;
+            transform: translateY(-4px) scale(1.02);
+        }
+    }
 }
 
-.card .card-title {
-    margin: 0;
-    font-weight: bold;
-    text-align: center;
-    font-size: 2rem;
-}
-
-.backdrop-mode .btn {
+.btn {
     color: rgba(255, 255, 255, 0.9);
     background-color: rgb(27, 139, 204);
     border-color: rgba(0, 0, 0, 0.2);
@@ -88,31 +186,6 @@ body {
     }
 }
 
-.backdrop-mode .page-header {
-    color: black;
-    text-align: left;
-    min-height: 90vh;
-    background-color: unset;
-    background-size: cover;
-    background-position: center;
-    // increment `v` query parameter for cache-busting
-    background-image: url("{{ '/assets/img/winter_backdrop.png?v=1' | relative_url }}");
-}
-
-.backdrop-mode .page-header .cards-container {
-    display: flex;
-    max-width: 800px;
-    margin-top: 3em;
-}
-
-.backdrop-mode .page-header .cards-container .card {
-    box-shadow: 0 0 16px #bae4f5ad;
-}
-
-.backdrop-mode .main-content .cards-container {
-    display: none;
-}
-
 .schedule {
     .day-container {
         margin-bottom: 2em;
@@ -125,6 +198,16 @@ body {
             box-shadow: 2px 2px 0 #eee;
             border: solid 1px #eee;
             border-radius: 4px;
+            transition: 0.2s transform, 0.2s box-shadow;
+            // Force subpixel rendering in chrome
+            transform: rotate(-0.0000000001deg);
+
+            @media (pointer: fine) {
+                &:hover {
+                    transform: scale(1.02);
+                    box-shadow: 2px 2px 0 #eee, 0 4px 16px #bae4f560;
+                }
+            }
 
             .title {
                 flex: 1;
@@ -148,7 +231,7 @@ body {
                 .tag {
                     margin-left: 0.5em;
                     margin-right: 1em;
-                    padding: 0.1rem 0.4rem;
+                    padding: 1.5px 6px;
                     border-radius: 4px;
                     font-size: 0.8rem;
                     display: inline-block;
@@ -162,4 +245,3 @@ body {
         }
     }
 }
-
