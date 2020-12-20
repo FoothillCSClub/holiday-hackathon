@@ -61,6 +61,45 @@ body {
             margin-top: auto;
             height: 100%;
         }
+
+        svg.snowman {
+            overflow: visible;
+
+            #scarf, #nose, #hat, #left_arm, #right_arm, #head, path.cls-4 {
+                transition: transform 0.5s;
+            }
+
+            &:hover {
+                #scarf {
+                    // transform: translate3d(2px, 2px, 0);
+                    transform: translate3d(-1635.79px, -10.82px, 0);
+                }
+
+                #nose {
+                    transform: translate3d(-1631.79px, -20.82px, 0);
+                }
+
+                #hat {
+                    transform: translate3d(-1633.89px, 231.1px, 0) rotate(-6.45deg);
+                }
+
+                path.cls-4 {
+                    transform: translate3d(-1621.79px, -4.82px, 0) rotate(-0.5deg);
+                }
+
+                #head {
+                    transform: translate3d(-8px, -10px, 0);
+                }
+
+                #left_arm {
+                    transform: translate3d(-24px, 20px, 0);
+                }
+
+                #right_arm {
+                    transform: translate3d(-26px, -20px, 0) rotate(2deg);
+                }
+            }
+        }
     }
 
     @media screen and (max-width: #{$medium-breakpoint}), screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) and (min-height: 600px) {
