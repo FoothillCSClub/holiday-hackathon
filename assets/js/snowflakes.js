@@ -164,6 +164,7 @@ function throttle(func, wait, options) {
 
 const footer = document.querySelector('footer');
 const footerImg = document.querySelector('.footer-img');
+const footerImgPadding = 48;
 
 footerImg.style.setProperty('--mouse-x', (window.innerWidth / 2) - (footerImg.clientWidth / 2) + 'px');
 
@@ -172,8 +173,11 @@ footer.addEventListener(
     throttle((e) => {
         let xPos = e.clientX - (footerImg.clientWidth / 2);
 
-        if (xPos < 0) xPos = 0;
-        if (xPos > window.innerWidth - footerImg.clientWidth) xPos = window.innerWidth - footerImg.clientWidth;
+        if (xPos < footerImgPadding)
+            xPos = footerImgPadding;
+
+        if (xPos > window.innerWidth - footerImg.clientWidth - footerImgPadding)
+            xPos = window.innerWidth - footerImg.clientWidth - footerImgPadding;
 
         footerImg.style.setProperty('--mouse-x', xPos + 'px');
     }, 1000, { leading: true, trailing: true })
