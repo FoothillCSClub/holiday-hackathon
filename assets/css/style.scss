@@ -288,19 +288,19 @@ body {
 }
 
 .site-footer {
-    padding: 3em;
     background-color: #a3dcec;
-    position: relative;
     overflow: hidden;
 
     .site-footer-owner {
+        padding: 3em;
+        padding-top: 1em;
         text-align: center;
     }
 
     .footer-img {
-        margin-bottom: 1em;
         --mouse-x: 50vw;
-        height: 20vh;
+        height: 20vmin;
+        max-width: 100%;
         transition: transform 2s;
         transform: translateX(var(--mouse-x));
         animation: move 15s infinite;
