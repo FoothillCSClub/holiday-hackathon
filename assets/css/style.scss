@@ -35,13 +35,15 @@ body {
     padding-bottom: 0;
     // min-height: 100vh;
 
+    background-image: unset;
     background-color: unset;
     background-size: cover;
-    background-position: center;
+    background-position: center 70%;
     // background: #a3dcec;
     // increment `v` query parameter for cache-busting
     // background-image: url("{{ '/assets/img/winter_backdrop.png?v=1' | relative_url }}");
-    background-image: url("{{ '/assets/img/winter_backdrop_empty.png?v=1' | relative_url }}");
+    // background-image: url("{{ '/assets/img/winter_backdrop_empty.png?v=1' | relative_url }}");
+    background-image: url("{{ '/assets/img/backdrop.svg?v=1' | relative_url }}");
 
     .header-content {
         z-index: 1;
@@ -282,5 +284,25 @@ body {
                 }
             }
         }
+    }
+}
+
+.site-footer {
+    padding: 3em;
+    background-color: #a3dcec;
+    position: relative;
+    overflow: hidden;
+
+    .site-footer-owner {
+        text-align: center;
+    }
+
+    .footer-img {
+        margin-bottom: 1em;
+        --mouse-x: 50vw;
+        height: 20vh;
+        transition: transform 2s;
+        transform: translateX(var(--mouse-x));
+        animation: move 15s infinite;
     }
 }
