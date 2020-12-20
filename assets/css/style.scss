@@ -41,8 +41,6 @@ body {
     background-position: center 70%;
     // background: #a3dcec;
     // increment `v` query parameter for cache-busting
-    // background-image: url("{{ '/assets/img/winter_backdrop.png?v=1' | relative_url }}");
-    // background-image: url("{{ '/assets/img/winter_backdrop_empty.png?v=1' | relative_url }}");
     background-image: url("{{ '/assets/img/backdrop.svg?v=1' | relative_url }}");
 
     .header-content {
