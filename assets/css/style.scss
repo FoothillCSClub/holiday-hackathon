@@ -104,7 +104,7 @@ body {
         }
     }
 
-    @media screen and (max-width: #{$medium-breakpoint}), screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) and (min-height: 600px) {
+    @media screen and (max-width: #{$medium-breakpoint}), screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) and (min-height: 700px) {
         width: 100%;
         flex-direction: column-reverse;
         justify-content: flex-end;
@@ -145,7 +145,7 @@ body {
     }
 }
 
-@media screen and (min-width: #{$medium-breakpoint}) and (min-height: 600px) {
+@media screen and (min-width: #{$medium-breakpoint}) and (min-height: 700px) {
     .page-header .cards-container {
         display: flex;
         margin-top: 3em;
