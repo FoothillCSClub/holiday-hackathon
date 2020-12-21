@@ -201,7 +201,7 @@ body {
 
 .btn {
     color: rgba(255, 255, 255, 0.9);
-    background-color: rgb(27, 139, 204);
+    background-color: #1b8bcc;
     border-color: rgba(0, 0, 0, 0.2);
 
     text-transform: uppercase;
@@ -213,7 +213,7 @@ body {
     &:hover {
         // color: rgba(0, 0, 0, 0.8);
         // background-color: rgba(0, 0, 0, 0.2);
-        background-color: rgb(24, 97, 139);
+        background-color: #18618b;
         border-color: rgba(0, 0, 0, 0.3);
     }
 
@@ -222,6 +222,17 @@ body {
     }
     @include small {
         font-size: 1rem;
+    }
+}
+
+.btn.schedule {
+    background: rgba(255, 255, 255, 0.5);
+    color: #1c8bcc;
+
+    &:hover {
+        background: #18618b;
+        color: rgba(255, 255, 255, 0.9);
+        // background: rgba(255, 255, 255, 1);
     }
 }
 

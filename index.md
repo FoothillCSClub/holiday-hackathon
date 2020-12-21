@@ -15,14 +15,14 @@ tags:
   intermediate:
     label: Intermediate
     color: "#e48f0f"
+  bonus:
+    label: Bonus
+    color: "#c370de"
 schedule:
   - day: Saturday, December 26
     events:
-      - title: Keynote Talk
-        time: 2:00 - 2:15 pm
-        tags: ["everyone"]
       - title: Hackathon & Event Kickoff
-        time: 2:15 - 3:00 pm
+        time: 2:00 - 3:00 pm
         tags: ["everyone"]
       - title: Intro to Git, Open Source, and the CLI
         time: 3:30 - 5:00 pm
@@ -46,18 +46,18 @@ schedule:
       - title: Intro to Databases & SQL
         time: 1:00 - 2:00 pm
         tags: ["beginner"]
-      - title: Intro to Go & Writing game servers
+      - title: The Go Programming Language
         time: 2:30 - 3:30 pm
         tags: ["beginner"]
-      - title: Using APIs & Web Scraping
-        time: 4:00 - 5:00 pm
-        tags: ["intermediate"]
       - title: Writing Discord Bots in Python
+        time: 4:00 - 5:00 pm
+        tags: ["beginner"]
+      - title: Web Scraping 101
         time: 5:30 - 6:30 pm
         tags: ["beginner"]
   - day: Tuesday, December 29
     events:
-      - title: <ins>Quantum Computing by Andrew Hacket from IBM</ins>
+      - title: <strong>"Quantum Computing" by Andrew Hacket from IBM</strong>
         time: 10 am - 11 am
         tags: ["everyone"]
       - title: Machine Learning & Neural Networks
@@ -66,54 +66,60 @@ schedule:
       - title: Building GUI Apps in Java
         time: 3:30 - 4:30 pm
         tags: ["intermediate"]
-      - title: Audio Processing & Making Synths
+      - title: "\"Make a synthesizer!\" - Audio Synthesis and Processing"
         time: 5:00 - 6:00 pm
-        tags: ["intermediate"]
+        tags: ["beginner"]
   - day: Wednesday, December 30
     events:
-      - title: "Hackathon check-in: share status"
-        time: 2:30 - 3:30 pm
-        tags: ["everyone"]
-      - title: "[TBD] Mobile App Development"
-        time: 4:00 - 5:00 pm
-        tags: ["beginner"]
-      - title: "Real World Use: GPS Stuff"
-        time: 5:30 - 6:15 pm
-        tags: ["intermediate"]
-  - day: Thursday, December 31
-    events:
-      - title: Closing Keynote Talk
-        time: 2:00 - 2:30 pm
-        tags: ["everyone"]
       - title: Hackathon Presentations
         time: 2:30 - 4:30 pm
         tags: ["everyone"]
-      - title: "Break: A fun activity 🎉"
-        time: 4:30 - 5:00 pm
-        tags: ["everyone"]
-      - title: Winners announced 🥳
+      - title: Winners Announced
         time: 5:00 - 5:15 pm
         tags: ["everyone"]
+      - title: "\"Track This!\" - GPS tools and algorithms 101"
+        time: 5:30 - 6:15 pm
+        tags: ["bonus"]
 ---
 
-## The Hackathon
+## Overview
 
-Hackathon Qualifications:
-- Final projects have to be able to run without crashing.
-- Projects have to be presented to the judges on Thursday, January 31
+During the event, there will be lots of talks and workshops that we'll be hosting, ranging across various topics and fields. We plan to have plenty of workshops for all levels of coders, from beginners to pros, so that everyone can enjoy and learn something new!
 
-## Activity Competition
+There will also be a hackathon where you can build a project of your choice. Don't let this intimidate you though, because it'll be fun!
 
-This competition is meant for everyone, especially those who may not be experienced programmers! You earn points for doing all kinds of activities, and the top attendees of the event will win a prize. Here's how you get points:
+> [**Hackathon**](#hackathon---build-a-project)
+>
+> [**Activity Competition**](#activity-competition---just-participate)
+>
+> [**Schedule**](#schedule) - **featuring a seminar by Andrew Hacket from IBM on Quantum Computing**
+>
+> [**FAQs**](#faqs)
+
+## Hackathon - Build a project
+
+Throughout the week, you can build a project of your choice, with help and guidance from us as needed. The project could be of any size, and could be really, really simple. It doesn't have to be anything fancy — just have fun, learn, and build something!
+
+For the competition, here are a few guidelines:
+
+- Teams can be 1 - 4 people
+- Have your project be in a GitHub repo with a README, in order to share it.
+- Projects should to be presented to the judges on Wednesday, December 30 ([see schedule below](#schedule)).
+
+DO NOT worry if this does not make sense to you just yet, because we'll go over this in one of the workshops. And, don't hesitate to reach out to us!
+
+## Activity Competition - Just participate!
+
+This competition is meant for everyone, especially those who may not be experienced programmers. You earn points for doing all kinds of activities, and the participants with the most points will win a prize. Here’s how you get points:
 
 | Activity                     | Points            |
 |------------------------------|-------------------|
+| Refer a friend               | 5 points / person |
 | Attend a talk or workshop    | 10 points         |
 | Do an activity in a workshop | 10 points         |
-| Complete a Challenge         | 20 points         |
-| Refer a friend               | 5 points / person |
-| Build a Hackathon Project    | 50 points         |
+| Build a hackathon project    | 50 points         |
 
+*By the way, you don't need to compete in the hackathon in order to get points for building a project. Simply building it and sharing it with us will be enough!*
 
 ## Schedule
 
@@ -180,20 +186,24 @@ This competition is meant for everyone, especially those who may not be experien
 
 **Who is this for?**
 
-Everyone! No prior knowledge of code is required - this event should be fun even if you’re not an experienced programmer. To participate in the event, you are only required to be interested in CS and learning more about that.
+Everyone! The events should be fun even if you’re not an experienced programmer. To participate, you only need to be interested in learning cool new stuff!
+
+**How do I join?**
+
+The hackathon will be hosted on Discord, in the CS Club Server. [**Click here to join the Discord server**](https://discord.com/invite/graRNeE), and ask for the @hacker role! Feel free to email [info@foothillcs.club](mailto:info@foothillcs.club) for assistance.
 
 **How can I participate?**
 
-Attend talks and workshops, earn points, and submit a project for the hackathon! Not everything is required though - you can choose the things you would like to do.
+Attend talks and workshops, earn activity points, and build a project for the hackathon! Not everything is required though - you can choose the things you would like to do.
 
 **Do I have to attend everything?**
 
-Absolutely not! You can and should pick and choose the workshops that are interesting to you and attend those.
+Absolutely not! You can pick and choose the talks, workshops, and activities that are interesting to you and attend those.
 
 **Do I have to submit a project?**
 
-No! If you’d only like to attend the workshops and events, that is fine too. We do recommend trying to build a project however, even if it’s something simple. Feel free to reach out to one of the mods for coming up with an idea!
+No! If you’d only like to attend the workshops and events, that's ok. We do recommend building a project, however, even if it’s something small or simple. Feel free to reach out to one of the @mods to come up with an idea!
 
-**I’m still not sure if I should join...**
+**I’m still not sure if I should join…**
 
-No worries! Reach out to one of the mods, like @Zachary or @Madhav, and have a chat with them to see what stuff you might enjoy at the event. Have fun, and feel free to drop by!
+No worries! Reach out to one of the @mods and have a chat with them to explore the things you may enjoy at the event. We're friendly, so don't hesitate at all. Have fun, and feel free to drop by anyways!
