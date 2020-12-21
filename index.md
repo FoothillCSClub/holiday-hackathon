@@ -24,7 +24,7 @@ schedule:
       - title: Hackathon & Event Kickoff
         time: 2:15 - 3:00 pm
         tags: ["everyone"]
-      - title: Intro to Git, Open Source, and Unix / Bash
+      - title: Intro to Git, Open Source, and the CLI
         time: 3:30 - 5:00 pm
         tags: ["beginner"]
   - day: Sunday, December 27
@@ -32,7 +32,7 @@ schedule:
       - title: Intro to Python
         time: 1:00 - 2:00 pm
         tags: ["beginner"]
-      - title: Intro to Databases & SQL
+      - title: Intro to Java
         time: 2:30 - 3:30 pm
         tags: ["beginner"]
       - title: Intro to Web Development
@@ -43,13 +43,13 @@ schedule:
         tags: ["beginner"]
   - day: Monday, December 28
     events:
-      - title: Intro to Java
+      - title: Intro to Databases & SQL
         time: 1:00 - 2:00 pm
         tags: ["beginner"]
-      - title: Intro to Go / Writing game servers
+      - title: Intro to Go & Writing game servers
         time: 2:30 - 3:30 pm
         tags: ["beginner"]
-      - title: Using APIs / Web Scraping
+      - title: Using APIs & Web Scraping
         time: 4:00 - 5:00 pm
         tags: ["intermediate"]
       - title: Writing Discord Bots in Python
@@ -63,7 +63,7 @@ schedule:
       - title: Machine Learning & Neural Networks
         time: 2:00 - 3:00 pm
         tags: ["beginner"]
-      - title: Java GUI
+      - title: Building GUI Apps in Java
         time: 3:30 - 4:30 pm
         tags: ["intermediate"]
       - title: Audio Processing & Making Synths
@@ -74,7 +74,7 @@ schedule:
       - title: "Hackathon check-in: share status"
         time: 2:30 - 3:30 pm
         tags: ["everyone"]
-      - title: Making iOS Apps with Swift
+      - title: "[TBD] Mobile App Development"
         time: 4:00 - 5:00 pm
         tags: ["beginner"]
       - title: "Real World Use: GPS Stuff"
