@@ -35,15 +35,19 @@
         {% if site.discord_invite %}
           <a href="{{ site.discord_invite }}" class="btn">Join us on Discord</a>
         {% endif %}
-        <a href="#schedule" class="btn schedule">Schedule</a>
-        <div class="cards-container">
-          {% for section in page.cards %}
-          <div class="card">
-            <h3 class="card-title">{{ section.title }}</h3>
-            <p>{{ section.description }}</p>
+        {% if page.schedule %}
+          <a href="#schedule" class="btn schedule">Schedule</a>
+        {% endif %}
+        {% if page.cards %}
+          <div class="cards-container">
+            {% for section in page.cards %}
+            <div class="card">
+              <h3 class="card-title">{{ section.title }}</h3>
+              <p>{{ section.description }}</p>
+            </div>
+            {% endfor %}
           </div>
-          {% endfor %}
-        </div>
+        {% endif %}
       </div>
       <div class="snowman-container">
         <!-- <img class="snowman" src="{{ '/assets/img/snowman-coding.svg?v=1' | relative_url }}"></img> -->

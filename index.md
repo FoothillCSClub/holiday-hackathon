@@ -15,9 +15,6 @@ tags:
   intermediate:
     label: Intermediate
     color: "#e48f0f"
-  bonus:
-    label: Bonus
-    color: "#c370de"
 schedule:
   - day: Saturday, December 26
     events:
@@ -52,8 +49,8 @@ schedule:
       - title: Writing Discord Bots in Python
         time: 4:00 - 5:00 pm
         tags: ["beginner"]
-      - title: Web Scraping 101
-        time: 5:30 - 6:30 pm
+      - title: "\"Track This!\" - GPS tools and algorithms 101"
+        time: 5:30 - 6:15 pm
         tags: ["beginner"]
   - day: Tuesday, December 29
     events:
@@ -71,15 +68,15 @@ schedule:
         tags: ["beginner"]
   - day: Wednesday, December 30
     events:
+      - title: Web Scraping 101
+        time: 1:00 - 2:00 pm
+        tags: ["beginner"]
       - title: Hackathon Presentations
         time: 2:30 - 4:30 pm
         tags: ["everyone"]
       - title: Winners Announced
         time: 5:00 - 5:15 pm
         tags: ["everyone"]
-      - title: "\"Track This!\" - GPS tools and algorithms 101"
-        time: 5:30 - 6:15 pm
-        tags: ["bonus"]
 ---
 
 ## Overview
@@ -102,7 +99,7 @@ Throughout the week, you can build a project of your choice, with help and guida
 
 For the competition, here are a few guidelines:
 
-- Teams can be 1 - 4 people
+- Teams should be 1 - 4 people.
 - Have your project be in a GitHub repo with a README, in order to share it.
 - Projects should to be presented to the judges on Wednesday, December 30 ([see schedule below](#schedule)).
 
