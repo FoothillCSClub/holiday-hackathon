@@ -55,7 +55,7 @@ This competition is meant for everyone, especially those who may not be experien
     {% for event in dayinfo.events %}
     <div class="event">
       <div class="title">
-        {{ event.title }}
+        {{ event.html_title | default: event.title }}
       </div>
       <div class="details-container">
         <div class="time">{{ event.time }}</div>
