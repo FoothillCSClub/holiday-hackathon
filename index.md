@@ -5,78 +5,6 @@ cards:
     description: Attend talks and participate in workshops to further your coding skills, earn points, and win cool prizes! There's a lot to explore.
   - title: Build
     description: Build a project in the hackathon, and show it off to your friends! Do it just for fun, or compete with teams of 1 - 4 people for prizes!
-tags:
-  everyone:
-    label: Everyone
-    color: "#1584e2"
-  beginner:
-    label: Beginner
-    color: "#00a700"
-  intermediate:
-    label: Intermediate
-    color: "#e48f0f"
-schedule:
-  - day: Saturday, December 26
-    events:
-      - title: Hackathon & Event Kickoff
-        time: 2:00 - 3:00 pm
-        tags: ["everyone"]
-      - title: Intro to Git, Open Source, and the CLI
-        time: 3:30 - 5:00 pm
-        tags: ["beginner"]
-  - day: Sunday, December 27
-    events:
-      - title: Intro to Python
-        time: 1:00 - 2:00 pm
-        tags: ["beginner"]
-      - title: Intro to Java
-        time: 2:30 - 3:30 pm
-        tags: ["beginner"]
-      - title: Intro to Web Development
-        time: 4:00 - 5:00 pm
-        tags: ["beginner"]
-      - title: Intro to Node.js & API servers
-        time: 5:15 - 6:15 pm
-        tags: ["beginner"]
-  - day: Monday, December 28
-    events:
-      - title: Intro to Databases & SQL
-        time: 1:00 - 2:00 pm
-        tags: ["beginner"]
-      - title: The Go Programming Language
-        time: 2:30 - 3:30 pm
-        tags: ["beginner"]
-      - title: Writing Discord Bots in Python
-        time: 4:00 - 5:00 pm
-        tags: ["beginner"]
-      - title: "\"Track This!\" - GPS tools and algorithms 101"
-        time: 5:30 - 6:15 pm
-        tags: ["beginner"]
-  - day: Tuesday, December 29
-    events:
-      - title: <strong>"Quantum Computing" by Andrew Hacket from IBM</strong>
-        time: 10 am - 11 am
-        tags: ["everyone"]
-      - title: Machine Learning & Neural Networks
-        time: 2:00 - 3:00 pm
-        tags: ["beginner"]
-      - title: Building GUI Apps in Java
-        time: 3:30 - 4:30 pm
-        tags: ["intermediate"]
-      - title: "\"Make a synthesizer!\" - Audio Synthesis and Processing"
-        time: 5:00 - 6:00 pm
-        tags: ["beginner"]
-  - day: Wednesday, December 30
-    events:
-      - title: Web Scraping 101
-        time: 1:00 - 2:00 pm
-        tags: ["beginner"]
-      - title: Hackathon Presentations
-        time: 2:30 - 4:30 pm
-        tags: ["everyone"]
-      - title: Winners Announced
-        time: 5:00 - 5:15 pm
-        tags: ["everyone"]
 ---
 
 ## Overview
@@ -121,7 +49,7 @@ This competition is meant for everyone, especially those who may not be experien
 ## Schedule
 
 <div class="schedule">
-  {% for dayinfo in page.schedule %}
+  {% for dayinfo in site.data.schedule.schedule %}
   <div class="day-container">
     <h3>{{ dayinfo.day }}</h3>
     {% for event in dayinfo.events %}
@@ -130,11 +58,11 @@ This competition is meant for everyone, especially those who may not be experien
         {{ event.title }}
       </div>
       <div class="details-container">
-        <div>{{ event.time }}</div>
+        <div class="time">{{ event.time }}</div>
         <div class="tags">
           {% if event.tags %}
             {% for tag in event.tags %}
-              {% assign tagitem = page.tags[tag] %}
+              {% assign tagitem = site.data.schedule.tags[tag] %}
               <span class="tag" style="background-color: {{ tagitem.color }}">{{ tagitem.label }}</span>
             {% endfor %}
           {% endif %}
@@ -145,39 +73,6 @@ This competition is meant for everyone, especially those who may not be experien
   </div>
   {% endfor %}
 </div>
-
-{% comment %}
-| Day       | Time             | Topic                                      |
-|-----------|------------------|--------------------------------------------|
-| Sat 12/26 | 2:00 - 2:15 pm   | Keynote Talk                               |
-|           | 2:15 - 3:00 pm   | Hackathon & Event Kickoff                  |
-|           | 3:30 - 5:00 pm   | Intro to Git, Open Source, and Unix / Bash |
-|           |                  |                                            |
-| Sun 12/27 | 1:00 - 2:00 pm   | Intro to Python                            |
-|           | 2:30 - 3:30 pm   | Intro to Databases & SQL                   |
-|           | 4:00 - 5:00 pm   | Intro to Web Dev                           |
-|           | 5:15 - 6:15 pm   | Intro to Node.js & API servers             |
-|           |                  |                                            |
-| Mon 12/28 | 1:00 - 2:00 pm   | Intro to Java                              |
-|           | 2:30 - 3:30 pm   | Intro to Go / Writing game servers         |
-|           | 4:00 - 5:00 pm   | Using APIs / Web Scraping                  |
-|           | 5:30 - 6:30 pm   | Writing Discord Bots                       |
-|           |                  |                                            |
-| Tue 12/29 | 10:00 - 11:00 am | <ins>Quantum Computing by Andrew Hacket from IBM</ins> |
-|           | 2:00 - 3:00 pm   | Machine Learning & Neural Nets             |
-|           | 3:30 - 4:30 pm   | Java GUI                                   |
-|           | 5:00 - 6:00 pm   | Audio Processing & Making Synths           |
-|           |                  |                                            |
-| Wed 12/30 | 2:30 - 3:30 pm   | Hackathon check-in: share status           |
-|           | 4:00 - 5:00 pm   | Making iOS Apps with Swift                 |
-|           | 5:30 - 6:15 pm   | Real World Use: GPS Stuff                  |
-|           |                  |                                            |
-| Thu 12/31 | 2:00 - 2:30 pm   | Closing Keynote Talk                       |
-|           | 2:30 - 4:30 pm   | Hackathon Presentations                    |
-|           | 4:30 - 5:00 pm   | A fun activity 🎉                           |
-|           | 5:00 - 5:20 pm   | Winners announced 🥳                        |
-|           | 10:00 - 12:10 am | New Year Party 🎉                           |
-{% endcomment %}
 
 ## FAQs
 

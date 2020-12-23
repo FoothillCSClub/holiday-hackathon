@@ -1,0 +1,70 @@
+tags:
+  everyone:
+    label: Everyone
+    color: "#1584e2"
+  beginner:
+    label: Beginner
+    color: "#00a700"
+  intermediate:
+    label: Intermediate
+    color: "#e48f0f"
+schedule:
+  - day: Saturday, December 26
+    events:
+      - title: Hackathon & Event Kickoff
+        time: 2:00 - 3:00 pm
+        tags: ["everyone"]
+      - title: Intro to Git, Open Source, and the CLI
+        time: 3:30 - 5:00 pm
+        tags: ["beginner"]
+  - day: Sunday, December 27
+    events:
+      - title: Intro to Python
+        time: 1:00 - 2:00 pm
+        tags: ["beginner"]
+      - title: Intro to Java
+        time: 2:30 - 3:30 pm
+        tags: ["beginner"]
+      - title: Intro to Web Development
+        time: 4:00 - 5:00 pm
+        tags: ["beginner"]
+      - title: Intro to Node.js & API servers
+        time: 5:15 - 6:15 pm
+        tags: ["beginner"]
+  - day: Monday, December 28
+    events:
+      - title: Intro to Databases & SQL
+        time: 1:00 - 2:00 pm
+        tags: ["beginner"]
+      - title: The Go Programming Language
+        time: 2:30 - 3:30 pm
+        tags: ["beginner"]
+      - title: Writing Discord Bots in Python
+        time: 4:00 - 5:00 pm
+        tags: ["beginner"]
+      - title: "\"Track This!\" - GPS tools and algorithms 101"
+        time: 5:30 - 6:15 pm
+        tags: ["beginner"]
+  - day: Tuesday, December 29
+    events:
+      - title: "\"Quantum Computing\" by Andrew Hacket from IBM"
+        html_title: <strong>"Quantum Computing" by Andrew Hacket from IBM</strong>
+        time: 10 am - 11 am
+        tags: ["everyone"]
+      - title: Machine Learning & Neural Networks
+        time: 2:00 - 3:00 pm
+        tags: ["beginner"]
+      - title: Building GUI Apps in Java
+        time: 3:30 - 4:30 pm
+        tags: ["intermediate"]
+      - title: "\"Make a synthesizer!\" - Audio Synthesis and Processing"
+        time: 5:00 - 6:00 pm
+        tags: ["beginner"]
+  - day: Wednesday, December 30
+    events:
+      - title: Hackathon Presentations
+        time: "&nbsp; 11 am - 1 pm"
+        tags: ["everyone"]
+      - title: Winners Announced
+        time: 1:30 - 1:45 pm
+        tags: ["everyone"]

@@ -273,6 +273,11 @@ body {
                     display: block;
                 }
 
+                .time {
+                    display: flex;
+                    align-items: center;
+                }
+
                 .tags {
                     display: inline-flex;
                     align-items: center;
