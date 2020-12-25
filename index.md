@@ -5,6 +5,7 @@ cards:
     description: Attend talks and participate in workshops to further your coding skills, earn points, and win cool prizes! There's a lot to explore.
   - title: Build
     description: Build a project in the hackathon, and show it off to your friends! Do it just for fun, or compete with teams of 1 - 4 people for prizes!
+has_schedule: true
 ---
 
 ## Overview
